@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios viejuners</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Club Viejuners</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset id="tu">
+                <h2>¿Quién eres?</h2>
+                <label for="nombre">Nombre</label> <br>
+                <input type="text" name="nombre" id="nombre" autofocus placeholder="Ingresa tu nombre" required> <br>
+
+                <label for="apellidos">Apellidos</label> <br>
+                <input type="text" name="apellidos" id="apellidos" placeholder="Ingresa tus apellidos"  required> <br>
+
+                <label for="edad">Edad</label> <br>
+                <input type="number" name="edad" id="edad" placeholder="Edad" min="18" max="120" required> <br>
+                <hr>
+                <p>Género:</p>
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="sexo" id="masculino" value="Masculino" required>
+                <label for="femenino">Femenino</label>
+                <input type="radio" name="sexo" id="femenino" value="Femenino">
+                <label for="otro">Otro</label>
+                <input type="radio" name="sexo" id="otro" value="Otro">
+                <hr>
+                <label for="viejuner">Me siento viejuner:</label> <br>
+                <input type="checkbox" name="viejuner" id="viejuner" value="Yes"> <br>
+                <hr>
+                <label for="info">Cuentanos algo sobre tí:</label><br>
+                <textarea name="info" id="info" rows="8" placeholder="Siempre he querido lograr..." maxlength="300"></textarea>
+            </fieldset>
+            <fieldset id="datos">
+                <h2>Tus datos:</h2>
+                <label for="email">Correo electrónico</label><br>
+                <input type="email" required><br>
+                <label for="tel">Número de teléfono</label><br>
+                <input type="tel" name="tel" id="tel" required pattern="[6-9][0-9]{8}"><br>
+            </fieldset>
+            <fieldset id="botones">
+                <input type="reset" name="reset" id="reset">
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
