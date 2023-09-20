@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ladronzuelos de bicicletas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Ladronzuelos de bicicletas</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset id="datos">
+                <h2>Describenos tu bicicleta perdida</h2>
+
+                <label for="dia">Día del robo:</label>
+                <input type="date" id="dia" name="fecha" required><br><br>
+
+                <label for="hora">Hora aproximada:</label>
+                <input type="time" id="hora" name="hora" required><br><br>
+
+                <label for="color">Color de la bicicleta:</label>
+                <input type="color" id="color" name="color" required><br><br>
+
+                <label for="precio">Rango de precio (0-1000€):</label>
+                <input type="range" id="precio" name="precio" min="0" max="1000" step="50" required><br><br>
+
+                <label for="tipo">Tipo de bicicleta:</label>                  
+                <select id="tipo" name="tipo" required>
+                    <optgroup label="Paseo">
+                      <option value="señorial">Señorial</option>
+                      <option value="anti-plebeyos">Anti-plebeyos</option>
+                      <option value="por-encima-del-hombro">PorEncimaDelHombro</option>
+                    </optgroup>   
+                    <optgroup label="Montaña">
+                      <option value="gamusinos">Gamusinos</option>
+                      <option value="hueleflores-premium">Hueleflores premium</option>
+                      <option value="fango-lover">Fango lover</option>
+                    </optgroup>                
+                    <optgroup label="Carreras">
+                      <option value="metroymedio">Metroymedio</option>
+                      <option value="3-de-la-tarde-fluorescente-edition">3 de la tarde. Fluorescente edition</option>
+                      <option value="grupitors">Grupitors</option>
+                    </optgroup>
+                </select> 
+
+                <label for="accesorios">Accesorios:</label>
+                <select id="accesorios" name="selector" multiple>
+                    <option value="ruedines">Ruedines</option>
+                    <option value="pegatinas">Pegatinas</option>
+                    <option value="cestita">Cestita</option>
+                    <option value="bomba de aire">Bomba de aire</option>
+                    <option value="timbre">Timbre</option>
+                    <option value="foco">Foco</option>
+                </select><br><br>
+
+                
+                <label for="marca">¿Qué marca era?:</label>
+                <datalist id="marcas">
+                    <option value="specialized">
+                    <option value="trek">
+                    <option value="merida">
+                    <option value="scott">
+                    <option value="giant">
+                    <option value="cube">
+                    <option value="lapierre">
+                    <option value="orbea">
+                    <option value="cannondale">
+                    <option value="bmc">
+                    <option value="canyon">
+                    <option value="look">
+                    <option value="protek">
+                    <option value="megamo">
+                    <option value="pinarello">
+                    <option value="bianchi">
+                    <option value="bh">
+                    <option value="factor">
+                    <option value="ghost">
+                    <option value="cervelo">
+                    <option value="argon">
+                </datalist>
+                <input type="text" id="marca" name="marca" list="marcas"><br><br>
+            </fieldset>
+            <fieldset id="botones">
+                <input type="reset" name="reset" id="reset">
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
